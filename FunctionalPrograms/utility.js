@@ -17,6 +17,12 @@ methods.input = function(){
 
          return val
 }
+methods.stopwatch = function(){
+    var d = new Date()
+    return d.getSeconds()
+}
+
+
 
 methods.primerange = function(n)
 {

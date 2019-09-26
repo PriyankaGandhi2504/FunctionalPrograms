@@ -47,44 +47,69 @@ function generateLocation(cnt) {
         count++
     }
 
-    // location = console.log(rownumber, columnnumber);
-    function updateValue(row, column) {
-        for (i = 0, j = 0; i <= 9; i++ , j++) {
-            if (array[[row], [column]] == "Null") {
-                location = row + column
-                console.log(location);
 
-                switch (location) {
-                    case 00:
-                        console.log("Case 00");
-                        break
-                    case 01:
-                        console.log("Case 01");
-                        break
-                    case 02:
-                        console.log("Case 02");
-                        break
-                    case 10:
-                        console.log("Case 10");
-                        break
-                    case 11:
-                        console.log("Case 11");
-                        break
-                    case 12:
-                        console.log("Case 12");
-                        break
-                    case 20:
-                        console.log("Case 20");
-                        break
-                    case 21:
-                        console.log("Case 21");
-                        break
-                    case 22:
-                        console.log("Case 22");
-                        break
-                }
-
-            }
-        }
+    function updatedValue(r, c){
+        // if(array[[r],[c]] == )
     }
+
+
+
+    // // location = console.log(rownumber, columnnumber);
+    // function updateValue(row, column) {
+    //     // for (i = 0, j = 0; i <= 9; i++ , j++) {
+    //     if (array[[row], [column]] == "Null") {
+    //         // location = row + column
+    //         // console.log(location);
+
+    //         switch (row, column) {
+    //             case '0,0':
+    //                 array[[row], [column]] = "X"
+    //                 console.log(updatedGrid(row, column));
+
+    //                 break
+    //             case '0,1':
+    //                 console.log("Case 01");
+    //                 break
+    //             case '0,2':
+    //                 console.log("Case 02");
+    //                 break
+    //             case '1,0':
+    //                 console.log("Case 10");
+    //                 break
+    //             case '1,1':
+    //                 console.log("Case 11");
+    //                 break
+    //             case '1,2':
+    //                 console.log("Case 12");
+    //                 break
+    //             case '2,0':
+    //                 console.log("Case 20");
+    //                 break
+    //             case '2,1':
+    //                 console.log("Case 21");
+    //                 break
+    //             case '2,2':
+    //                 console.log("Case 22");
+    //                 break
+    //         }
+
+    //         function updatedGrid(r, c) {
+    //             for (i = 0; i < 3; i++) {
+    //                 for (j = 0; j < 3; j++) {
+    //                     if (array[i] == r && array[j] == c) {
+    //                         array[[i], [j]] = "X"
+    //                     }
+    //                     if(array[[i][j]] == "X" ||  array[[i][j]] == "O"){
+    //                         console.log(array[[i][j]]);
+    //                     }
+    //                     array = console.log("Null-" + i + j);
+                       
+    //                     console.log(array);
+    //                 }
+    //             }
+    //         }
+
+    //     }
+    //     //}
+    // }
 }

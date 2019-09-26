@@ -3,19 +3,19 @@ const input = require("./utility")
 var num = input.data.input()
 
 console.log(primeFactor(num))
-
-
-function primeFactor(n){
-    var i = 2;
-    while(i <= n){
-        if(n % 2 == 1){
-            console.log(i)
-            if(n % i == 0){
-                console.log(i)
-            }
+function primeFactor(n) {
+    for (i = 2; i * i <= n; i++) {
+        while (n % i == 0) {
+            console.log(i);
+            n /= i;
         }
-        i++;
     }
-   
+    if (n > 2) {
+        console.log(n);
+    }
 }
+
+
+
+
 

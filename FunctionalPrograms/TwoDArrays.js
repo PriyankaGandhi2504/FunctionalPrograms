@@ -23,19 +23,26 @@ switch (arraytype) {
 function displayIntegerArray(row, col) {
     var i; var j;
     console.log("Enter Array Elements ");
-    var arr = []
+    var arr = []; var matrix = []
     for (i = 1; i <= row; i++) {
         for (j = 1; j <= col; j++) {
             //arr = arr[i] + arr[j]
 
-            arr[[i], [j]] = input.data.input()
+            // arr[[i], [j]] = 
+            arr.push(input.data.input())
 
         }
+       
+        matrix.push(arr)
         console.log();
         // console.write();
     }
-    console.log(" ")
+    console.log(matrix);
+    matrix = []
+    // console.log(" ")
     // util.print(arr[[i],[j]])
+    
+    
 
 }
 
