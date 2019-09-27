@@ -4,6 +4,8 @@ var i; var j; var k; var result;
 var numberOfPairs = 0;
 console.log("Enter Number of elements in array");
 number = input.questionInt()
+console.log("Enter array elements: ");
+
 for (let i = 0; i < number; i++) {
     array[i] = input.questionInt()
 }
