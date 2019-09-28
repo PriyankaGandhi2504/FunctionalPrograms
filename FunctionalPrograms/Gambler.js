@@ -1,31 +1,30 @@
+/*7. Gambler
+a. Desc -> Simulates a gambler who start with $stake and place fair $1 bets until
+he/she goes broke (i.e. has no money) or reach $goal. Keeps track of the number of
+times he/she wins and the number of bets he/she makes. Run the experiment N
+times, averages the results, and prints them out.
+b. I/P -> $Stake, $Goal and Number of times
+c. Logic -> Play till the gambler is broke or has won
+d. O/P -> Print Number of Wins and Percentage of Win and Loss.
+
+Author Name : Priyanka Gandhi
+Date : 24/09/2019
+*/
+
 const input = require("./utility")
 
 var stake; var goal; var no_oftimes;
+var wincounter = 0; var losecounter = 0;         //counter to count number of times user wins and loses
 console.log("Enter stake");
-stake = parseInt(input.data.input())
+stake = parseInt(input.data.input())        //taking stake as a user input
 console.log("Enter your Goal");
-goal = parseInt(input.data.input())
+goal = parseInt(input.data.input())         //user input for number of goals
 console.log("Enter Number of Times");
-no_oftimes = parseInt(input.data.input())
+no_oftimes = parseInt(input.data.input())   //user input for total number of trials
+console.log(input.data.generateRandomVariable(stake, goal, no_oftimes));
 
-var wincounter = 0; var losecounter = 0;
-var broke = 0;
-var no_ofbet = 0;
-for (var i = 0; i < no_oftimes; i++) {
-    cash = stake
-    if (cash > 0 && cash != goal) {
-        no_ofbet++
-        var randomvariable = Math.random()
-        console.log(randomvariable);
 
-        if (randomvariable < 0.5) {
-            // console.log("Random display: " + randomvariable);
-            cash++
-            // console.log("Cash: "+ cash);
-            wincounter++
-        } else {
-            cash--
-            losecounter++
+
             // }
             // if (cash == goal){
             //     wincounter++
@@ -34,11 +33,3 @@ for (var i = 0; i < no_oftimes; i++) {
             //     losecounter++
             //     console.log("Losecounter: " + losecounter);
             // }
-        }
-    }
-}
-console.log("Number of times User wins: " + wincounter);
-var winpercent = parseInt((wincounter / no_oftimes) * 100)
-var losepercent = parseInt((losecounter / no_oftimes) * 100)
-console.log("Win Percentage: " + winpercent)
-console.log("Lose Percent : " + losepercent)
